@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# pre-commit钩子：prettier和eslint检测代码格式和代码质量
+# 执行 git commit 的时候
+# 先去执行lint-staged命令（lint-staged命令是在package.json 配置的）
+# 完成 eslint的检查和prettier的文件格式化
+# npx --no-install lint-staged
+npm run precommit

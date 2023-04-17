@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# commit-msg钩子：执行commitlint，检测提交信息是否符合格式
+# 限制 git commit 的命令
+npx --no-install commitlint --edit
